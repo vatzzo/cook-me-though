@@ -1,0 +1,13 @@
+.showcase {
+  width: 100%;
+  min-height: calc(100vh - 10rem);
+  background-image: linear-gradient(
+    to right bottom,
+    $color-sec-light,
+    $color-sec
+  );
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

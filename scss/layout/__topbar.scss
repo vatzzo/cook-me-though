@@ -1,0 +1,69 @@
+.topbar {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background-color: $color-pri;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+
+  &__logo {
+    flex: 1 0 0;
+    text-align: center;
+
+    @include res(vtab) {
+      padding: 0.5rem 1rem;
+    }
+
+    @include res(mobile) {
+      margin-right: 1rem;
+    }
+  }
+
+  .form {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include res(mobile) {
+      flex-basis: 80%;
+      flex-shrink: 1;
+    }
+    & > * {
+      padding: 1rem 2rem;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        outline: none;
+      }
+    }
+
+    &__button {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ter,
+        $color-ter-light
+      );
+      box-shadow: 0 0 0 0.3rem $color-white inset;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      @include res(vtab) {
+        margin: 0 2rem;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      &:active {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

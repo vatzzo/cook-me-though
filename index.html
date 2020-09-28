@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cook Me Though</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TOPBAR -->
+    <nav class="topbar">
+      <div class="topbar__logo">cook me though</div>
+      <form class="form" action="#">
+        <input
+          class="form__input"
+          type="text"
+          maxlength="15"
+          placeholder="What would you eat?"
+        />
+        <button class="form__button">find</button>
+      </form>
+    </nav>
+
+    <div class="alertbox">Numbers and special characters are not allowed.</div>
+
+    <div class="shop-list">
+      <div class="shop-list__container">
+        <div class="shop-list__remove">x</div>
+        <ul class="shop-list__ingredients"></ul>
+      </div>
+    </div>
+
+    <div class="bookmark">shop list</div>
+
+    <!-- SHOWCASE -->
+    <main class="showcase"></main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
